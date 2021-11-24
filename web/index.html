@@ -33,6 +33,9 @@
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
+
+  
+
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
@@ -100,5 +103,24 @@
       loadMainDartJs();
     }
   </script>
+
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyA5e8lfbE-3P9xwbczAsk9Yqqgxs7rxyaU",
+    authDomain: "ders-hatirlatici-web.firebaseapp.com",
+    projectId: "ders-hatirlatici-web",
+    storageBucket: "ders-hatirlatici-web.appspot.com",
+    messagingSenderId: "372854706083",
+    appId: "1:372854706083:web:147557b66b984494381416",
+    measurementId: "G-22CFKBZF7S"
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.getAnalytics(app);
+</script>
 </body>
 </html>
